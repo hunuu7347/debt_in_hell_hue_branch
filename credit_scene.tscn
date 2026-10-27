@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://c53rw6it8c01a"]
+
+[ext_resource type="Texture2D" uid="uid://bgcl0tqj3ugsq" path="res://Background_Art_Credit.png" id="1_e17b7"]
+[ext_resource type="FontFile" uid="uid://dqvffr883tso3" path="res://PressStart2P-Regular.ttf" id="2_ytlwl"]
+[ext_resource type="FontFile" uid="uid://dmmit0s1jarfq" path="res://PixelifySans-VariableFont_wght.ttf" id="3_yc3pj"]
+
+[node name="Node2D" type="Node2D" unique_id=1828380908]
+
+[node name="Control" type="Control" parent="." unique_id=304163097]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 317.0
+offset_bottom = 84.0
+
+[node name="BackgroundArtCredit" type="Sprite2D" parent="." unique_id=1197582156]
+position = Vector2(581, 286.49994)
+scale = Vector2(2.25, 2.1676471)
+texture = ExtResource("1_e17b7")
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=857758658]
+offset_left = 191.0
+offset_top = 252.0
+offset_right = 968.0
+offset_bottom = 385.0
+theme_override_fonts/font = ExtResource("2_ytlwl")
+theme_override_font_sizes/font_size = 19
+text = " Well Done! You have made it out of Hell!
+
+Remember this lesson, don’t let debt 
+become your next obsession!"
+
+[node name="TextEdit2" type="TextEdit" parent="." unique_id=400272966]
+offset_left = 353.0
+offset_top = 463.0
+offset_right = 850.0
+offset_bottom = 625.0
+theme_override_fonts/font = ExtResource("2_ytlwl")
+theme_override_font_sizes/font_size = 11
+text = "Debt from Hell wonderfully brought to you by 
+Myzura,
+Afay,
+Irel,
+& Hue."
+
+[node name="TextEdit3" type="TextEdit" parent="." unique_id=1535169330]
+offset_left = 516.0
+offset_top = 376.0
+offset_right = 664.0
+offset_bottom = 440.0
+theme_override_colors/font_color = Color(1.0019991, 0.09977452, 0.28451574, 0.96862745)
+theme_override_fonts/font = ExtResource("3_yc3pj")
+theme_override_font_sizes/font_size = 37
+text = "Replay"
+
+[node name="TextEdit4" type="TextEdit" parent="." unique_id=431063142]
+offset_left = 896.0
+offset_top = -55.0
+offset_right = 1201.0
+offset_bottom = 17.0
+text = "Your Soul Debt"
+
+[node name="TextEdit5" type="TextEdit" parent="." unique_id=288416587]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="TextEdit6" type="TextEdit" parent="." unique_id=1540811824]
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="TextEdit7" type="TextEdit" parent="." unique_id=2045803090]
+offset_right = 8.0
+offset_bottom = 8.0
