@@ -1,0 +1,92 @@
+[gd_scene format=3 uid="uid://ctulbtec2fiqc"]
+
+[ext_resource type="Texture2D" uid="uid://cjoi8ej5hugyp" path="res://Background_Heaven.png" id="1_45j2h"]
+[ext_resource type="Texture2D" uid="uid://bg86p11avcke8" path="res://Debt_Angel.png" id="2_73e7l"]
+[ext_resource type="FontFile" uid="uid://dmmit0s1jarfq" path="res://PixelifySans-VariableFont_wght.ttf" id="3_fps8r"]
+[ext_resource type="Script" uid="uid://bnkyl7mckdstc" path="res://score_calculation.gd" id="4_45j2h"]
+[ext_resource type="FontFile" uid="uid://dqvffr883tso3" path="res://PressStart2P-Regular.ttf" id="5_45j2h"]
+[ext_resource type="Script" uid="uid://7gpv6rh8vd38" path="res://cruelty_score_calculation.gd" id="5_a6tii"]
+[ext_resource type="Script" uid="uid://dj7bcj8tn51u" path="res://Return_to_Main_Menu.gd" id="6_a6tii"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_scyef"]
+
+[node name="Node2D" type="Node2D" unique_id=1200440934]
+
+[node name="BackgroundHeaven" type="Sprite2D" parent="." unique_id=1397217064]
+position = Vector2(574.5, 321.5)
+scale = Vector2(1.8265625, 1.9382354)
+texture = ExtResource("1_45j2h")
+
+[node name="DebtAngel" type="Sprite2D" parent="." unique_id=1879747764]
+position = Vector2(588, 280)
+scale = Vector2(2.3766665, 3.39)
+texture = ExtResource("2_73e7l")
+
+[node name="TextEdit2" type="TextEdit" parent="." unique_id=1334875332]
+offset_left = 428.0
+offset_top = 226.0
+offset_right = 742.0
+offset_bottom = 323.0
+theme_override_colors/font_color = Color(0.6745098, 0.08627451, 0.08627451, 1)
+theme_override_colors/font_outline_color = Color(0.6745098, 0.08627451, 0.08627451, 1)
+theme_override_fonts/font = ExtResource("3_fps8r")
+theme_override_font_sizes/font_size = 28
+text = "Debt Score:
+Cruelty Score:"
+
+[node name="TextEdit" type="TextEdit" parent="TextEdit2" unique_id=1679537280]
+layout_mode = 0
+offset_left = 180.0
+offset_top = -3.999998
+offset_right = 230.0
+offset_bottom = 44.0
+theme_override_fonts/font = ExtResource("3_fps8r")
+theme_override_font_sizes/font_size = 24
+script = ExtResource("4_45j2h")
+
+[node name="TextEdit2" type="TextEdit" parent="TextEdit2" unique_id=1755851185]
+layout_mode = 0
+offset_left = 227.0
+offset_top = 43.0
+offset_right = 282.5
+offset_bottom = 85.640366
+script = ExtResource("5_a6tii")
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=951301461]
+offset_left = 253.0
+offset_top = 339.0
+offset_right = 932.0
+offset_bottom = 485.0
+theme_override_fonts/font = ExtResource("3_fps8r")
+theme_override_font_sizes/font_size = 25
+text = "Well Done! You have made it out of Hell!
+
+Remember this lesson, don’t let debt become your next 
+obsession!
+"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TextEdit" unique_id=487710427]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.097
+anchor_bottom = 0.26500002
+offset_left = 187.0
+offset_top = 195.0
+offset_right = 417.137
+offset_bottom = 205.31
+theme_override_colors/default_color = Color(0.08235294, 0.08235294, 0.08235294, 1)
+theme_override_fonts/normal_font = ExtResource("5_45j2h")
+theme_override_font_sizes/normal_font_size = 17
+theme_override_styles/normal = SubResource("StyleBoxFlat_scyef")
+text = "Exit to Main Menu"
+script = ExtResource("6_a6tii")
+
+[node name="Container" type="Container" parent="." unique_id=290041257]
+modulate = Color(0.08235294, 0.08235294, 0.08235294, 1)
+self_modulate = Color(0.08235294, 0.08235294, 0.08235294, 1)
+offset_left = 426.0
+offset_top = 229.0
+offset_right = 746.0
+offset_bottom = 272.0
+
+[connection signal="gui_input" from="TextEdit/RichTextLabel" to="TextEdit/RichTextLabel" method="_on_gui_input"]

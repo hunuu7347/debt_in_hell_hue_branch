@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://cq8twrn8kw8ci"]
+
+[ext_resource type="Texture2D" uid="uid://bgcl0tqj3ugsq" path="res://Background_Art_Credit.png" id="1_heft5"]
+[ext_resource type="Script" uid="uid://bnkyl7mckdstc" path="res://score_calculation.gd" id="2_icxkg"]
+[ext_resource type="FontFile" uid="uid://dmmit0s1jarfq" path="res://PixelifySans-VariableFont_wght.ttf" id="2_jaso3"]
+[ext_resource type="Texture2D" uid="uid://bg86p11avcke8" path="res://Debt_Angel.png" id="2_qu0dv"]
+[ext_resource type="FontFile" uid="uid://dqvffr883tso3" path="res://PressStart2P-Regular.ttf" id="4_o6i5n"]
+[ext_resource type="Script" uid="uid://dj7bcj8tn51u" path="res://Return_to_Main_Menu.gd" id="5_qu0dv"]
+
+[node name="Node2D" type="Node2D" unique_id=1220709461]
+
+[node name="BackgroundArtCredit" type="Sprite2D" parent="." unique_id=977396041]
+position = Vector2(575, 323.50003)
+scale = Vector2(1.7875, 1.8970587)
+texture = ExtResource("1_heft5")
+
+[node name="DebtAngel" type="Sprite2D" parent="BackgroundArtCredit" unique_id=481884671]
+position = Vector2(-15.804203, -8.263573)
+scale = Vector2(2.1491838, 1.7404652)
+texture = ExtResource("2_qu0dv")
+
+[node name="TextEdit" type="TextEdit" parent="BackgroundArtCredit" unique_id=1242008622]
+offset_left = -96.22378
+offset_top = -15.023274
+offset_right = 92.307686
+offset_bottom = 24.775158
+theme_override_colors/font_color = Color(0.6745098, 0.08627451, 0.08627451, 1)
+theme_override_fonts/font = ExtResource("2_jaso3")
+text = "Debt Remaining:"
+
+[node name="TextEdit2" type="TextEdit" parent="BackgroundArtCredit" unique_id=1661433498]
+offset_left = -176.22377
+offset_top = 27.14728
+offset_right = 183.4965
+offset_bottom = 114.124054
+theme_override_fonts/font = ExtResource("2_jaso3")
+theme_override_font_sizes/font_size = 15
+text = "Hell’s Gate remains sealed. 
+You are bound to return to service until your 
+debt is repaid."
+
+[node name="TextEdit" type="TextEdit" parent="BackgroundArtCredit/TextEdit2" unique_id=617572787]
+layout_mode = 0
+offset_left = 210.34966
+offset_top = -39.00776
+offset_right = 247.27274
+offset_bottom = -9.488365
+script = ExtResource("2_icxkg")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="BackgroundArtCredit" unique_id=1755430455]
+offset_left = -69.93007
+offset_top = 118.34109
+offset_right = 69.93007
+offset_bottom = 152.60468
+theme_override_fonts/normal_font = ExtResource("4_o6i5n")
+theme_override_font_sizes/normal_font_size = 10
+text = "Return to pay your DEBT"
+script = ExtResource("5_qu0dv")
+
+[connection signal="gui_input" from="BackgroundArtCredit/RichTextLabel" to="BackgroundArtCredit/RichTextLabel" method="_on_gui_input"]

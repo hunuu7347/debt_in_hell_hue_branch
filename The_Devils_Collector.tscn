@@ -1,0 +1,81 @@
+[gd_scene format=3 uid="uid://36jx50n2cfwf"]
+
+[ext_resource type="Texture2D" uid="uid://bgcl0tqj3ugsq" path="res://Background_Art_Credit.png" id="1_py8jj"]
+[ext_resource type="Texture2D" uid="uid://bg86p11avcke8" path="res://Debt_Angel.png" id="2_scyef"]
+[ext_resource type="FontFile" uid="uid://dmmit0s1jarfq" path="res://PixelifySans-VariableFont_wght.ttf" id="3_cebel"]
+[ext_resource type="Script" uid="uid://bnkyl7mckdstc" path="res://score_calculation.gd" id="4_w3sjp"]
+[ext_resource type="Script" uid="uid://7gpv6rh8vd38" path="res://cruelty_score_calculation.gd" id="5_cebel"]
+[ext_resource type="FontFile" uid="uid://dqvffr883tso3" path="res://PressStart2P-Regular.ttf" id="5_eamy3"]
+[ext_resource type="Script" uid="uid://dj7bcj8tn51u" path="res://Return_to_Main_Menu.gd" id="6_noe4i"]
+
+[node name="Node2D" type="Node2D" unique_id=1152527314]
+
+[node name="BackgroundArtCredit" type="Sprite2D" parent="." unique_id=62008174]
+position = Vector2(578, 328.00003)
+scale = Vector2(1.8062499, 1.9235294)
+texture = ExtResource("1_py8jj")
+
+[node name="DebtAngel" type="Sprite2D" parent="." unique_id=2021389925]
+position = Vector2(505, 342)
+scale = Vector2(3.1033335, 3.7299998)
+texture = ExtResource("2_scyef")
+
+[node name="TextEdit2" type="TextEdit" parent="." unique_id=1173728802]
+offset_left = 100.0
+offset_top = 390.0
+offset_right = 1055.0
+offset_bottom = 511.0
+theme_override_fonts/font = ExtResource("3_cebel")
+theme_override_font_sizes/font_size = 28
+text = "The angel condemns your greed and deceit, declaring extortion a sin 
+unworthy of mercy.  The gate remains sealed, and for your insolence, 
+the debt you owe has doubled."
+
+[node name="TextEdit" type="TextEdit" parent="." unique_id=1071428728]
+offset_left = 410.0
+offset_top = 257.0
+offset_right = 719.0
+offset_bottom = 370.0
+theme_override_colors/font_color = Color(0.6745098, 0.08627451, 0.08627451, 1)
+theme_override_fonts/font = ExtResource("3_cebel")
+theme_override_font_sizes/font_size = 28
+text = "Debt Score:
+
+Cuelty Score:"
+scroll_vertical = 0.23684210526315796
+
+[node name="TextEdit" type="TextEdit" parent="TextEdit" unique_id=474214281]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.5
+anchor_bottom = 0.44200003
+offset_left = 183.0
+offset_top = -2.0
+offset_right = 74.5
+offset_bottom = 10.125996
+theme_override_colors/font_color = Color(0.6745098, 0.08627451, 0.08627451, 1)
+theme_override_fonts/font = ExtResource("3_cebel")
+theme_override_font_sizes/font_size = 24
+script = ExtResource("4_w3sjp")
+
+[node name="TextEdit2" type="TextEdit" parent="TextEdit" unique_id=1731928275]
+layout_mode = 0
+offset_left = 199.0
+offset_top = 67.0
+offset_right = 269.0
+offset_bottom = 115.434265
+theme_override_colors/font_color = Color(0.6745098, 0.08627451, 0.08627451, 1)
+theme_override_fonts/font = ExtResource("3_cebel")
+theme_override_font_sizes/font_size = 24
+script = ExtResource("5_cebel")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1299840831]
+offset_left = 391.0
+offset_top = 532.0
+offset_right = 701.0
+offset_bottom = 596.0
+theme_override_colors/default_color = Color(0.6745098, 0.08627451, 0.08627451, 1)
+theme_override_fonts/normal_font = ExtResource("5_eamy3")
+theme_override_font_sizes/normal_font_size = 21
+text = "Return to pay your DEBT"
+script = ExtResource("6_noe4i")
