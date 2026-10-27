@@ -78,3 +78,5 @@ theme_override_fonts/normal_font = ExtResource("5_eamy3")
 theme_override_font_sizes/normal_font_size = 21
 text = "Return to pay your DEBT"
 script = ExtResource("6_noe4i")
+
+[node name="HTTPRequest" type="HTTPRequest" parent="." unique_id=754427261]

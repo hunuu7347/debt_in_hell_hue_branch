@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://ctulbtec2fiqc"]
 
 [ext_resource type="Texture2D" uid="uid://cjoi8ej5hugyp" path="res://Background_Heaven.png" id="1_45j2h"]
+[ext_resource type="AudioStream" uid="uid://b05b5l4pbx36a" path="res://nojisuma-follow_the_light-360385.mp3" id="2_5flrq"]
 [ext_resource type="Texture2D" uid="uid://bg86p11avcke8" path="res://Debt_Angel.png" id="2_73e7l"]
 [ext_resource type="FontFile" uid="uid://dmmit0s1jarfq" path="res://PixelifySans-VariableFont_wght.ttf" id="3_fps8r"]
 [ext_resource type="Script" uid="uid://bnkyl7mckdstc" path="res://score_calculation.gd" id="4_45j2h"]
@@ -16,6 +17,12 @@
 position = Vector2(574.5, 321.5)
 scale = Vector2(1.8265625, 1.9382354)
 texture = ExtResource("1_45j2h")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1220588911]
+position = Vector2(574.5, 321.5)
+scale = Vector2(1.8265625, 1.9382354)
+stream = ExtResource("2_5flrq")
+autoplay = true
 
 [node name="DebtAngel" type="Sprite2D" parent="." unique_id=1879747764]
 position = Vector2(588, 280)

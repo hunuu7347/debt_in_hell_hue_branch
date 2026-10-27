@@ -30,23 +30,27 @@ text = "Debt from Hell was wonderfully
       brought to you by"
 
 [node name="TextEdit2" type="TextEdit" parent="." unique_id=400272966]
-offset_left = 497.0
+offset_left = 37.0
 offset_top = 279.0
-offset_right = 668.0
-offset_bottom = 441.0
+offset_right = 1144.0
+offset_bottom = 572.0
 theme_override_colors/font_color = Color(0.6745098, 0.08627451, 0.08627451, 1)
+theme_override_colors/background_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = ExtResource("3_yc3pj")
-theme_override_font_sizes/font_size = 30
-text = "Myzura,
-Afay,
-Irel,
-& Hue."
+theme_override_font_sizes/font_size = 25
+text = "Artists: Myzura, Artists: Afay, Developer: Irel, Developer: Hue
+and these Royalty-Free Music: 
+- https://pixabay.com/music/ambient-dark-fantasy-ambient-dungeon-synth-248213/
+
+-https://pixabay.com/ja/music/アンビエント-異界の地-underworld-263012/
+
+- https://pixabay.com/music/electronic-明かりに従う-follow-the-light-360385/"
 
 [node name="TextEdit4" type="TextEdit" parent="." unique_id=431063142]
-offset_left = 463.0
-offset_top = 488.0
-offset_right = 768.0
-offset_bottom = 560.0
+offset_left = 461.0
+offset_top = 559.0
+offset_right = 766.0
+offset_bottom = 631.0
 theme_override_fonts/font = ExtResource("2_ytlwl")
 theme_override_font_sizes/font_size = 15
 text = "Return to Main Menu"
